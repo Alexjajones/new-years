@@ -2,8 +2,8 @@ import moment from 'moment'
 
 var config = {
     countdown: {
-        to: '2017-1-1',
-        // to: moment().add(5, 'seconds'),
+        to: '2017/01/01',
+        // to: moment().add(65, 'seconds'),
         text: 'Seconds until 2017'
     },
     youtube: {

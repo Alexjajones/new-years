@@ -2,6 +2,8 @@ import Inferno from 'inferno';
 import Component from 'inferno-component';
 import './youtube.css'
 
+/*eslint-disable */
+
 class YouTube extends Component {
     player_instance;
 
@@ -53,3 +55,5 @@ class YouTube extends Component {
 }
 
 export default YouTube;
+
+/*eslint-enable */

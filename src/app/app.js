@@ -14,7 +14,7 @@ class App extends Component {
     componentDidMount() {
         this.setState({timeRemaining: this.calcTimeRemaining()});
 
-        setInterval(() => this.setState({timeRemaining: this.calcTimeRemaining()}), 100)
+        setInterval(() => this.setState({timeRemaining: this.calcTimeRemaining()}), 500)
     }
 
     calcTimeRemaining = () => {
@@ -24,6 +24,8 @@ class App extends Component {
         var duration = moment.duration(end.diff(now));
 
         var seconds = duration.asSeconds();
+
+        console.log({seconds});
 
         return seconds.toFixed(0)
     };

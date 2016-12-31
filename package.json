@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "babel-plugin-inferno": "^1.4.0",
+    "browser-sync": "^2.18.5",
     "inferno": "^1.0.2",
     "inferno-component": "^1.0.2",
     "moment": "^2.17.1"
@@ -15,6 +16,7 @@
     "start": "inferno-scripts start",
     "build": "inferno-scripts build",
     "test": "inferno-scripts test --env=jsdom",
-    "eject": "inferno-scripts eject"
+    "eject": "inferno-scripts eject",
+    "expose": "cd build; browser-sync start --server --files '**/*.*' --port 1337"
   }
 }
