@@ -1,0 +1,19 @@
+.shout-out-input input {
+    border:    none;
+    width:     80%;
+    padding:   20px;
+    font-size: 24px;
+}
+
+.shout-out-input button {
+    border:    none;
+    display:   block;
+    width:     200px;
+    padding:   20px;
+    font-size: 24px;
+    margin:    25px auto auto;
+}
+
+.shout-out-input-inner {
+    width: 100%;
+}

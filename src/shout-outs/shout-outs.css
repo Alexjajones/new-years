@@ -1,0 +1,10 @@
+.shout-outs {
+    position:         absolute;
+    left:             0px;
+    right:            0px;
+    padding:          30px;
+    font-size:        40px;
+    background-color: rgba(51, 51, 51, 0.9);
+    margin-bottom:    -57px;
+    bottom:           50%;
+}

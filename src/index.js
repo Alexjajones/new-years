@@ -1,7 +1,7 @@
 import Inferno from 'inferno';
-import App from './app/app';
+import Routes from './routes';
 
 Inferno.render(
-    <App />,
+    <Routes />,
     document.getElementById('app')
 );

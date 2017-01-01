@@ -1,23 +1,14 @@
 import Inferno from 'inferno';
 import Component from 'inferno-component';
 import './youtube.css'
+import Config from '../config'
 
 /*eslint-disable */
 
 class YouTube extends Component {
     player_instance;
 
-    player_config = {
-        controls: 0,
-        showinfo: 0,
-        loop: 1,
-        playlist: this.props.video_id,
-        rel: 0,
-        iv_load_policy: 3,
-        autoplay: 1,
-        start: 1,
-        end: 19980
-    };
+    player_config = Config.youtube.player_config;
 
     componentDidMount() {
         this.onYoutubeReady()
@@ -33,7 +24,7 @@ class YouTube extends Component {
 
     initPlayer() {
         this.player_instance = new YT.Player('player', {
-            videoId: this.props.video_id,
+            videoId: Config.youtube.id,
             playerVars: this.player_config,
             events: {'onReady': this.playerOnReady}
         });
@@ -41,8 +32,8 @@ class YouTube extends Component {
 
     playerOnReady = () => {
         this.player_instance.mute();
-        this.player_instance.setPlaybackQuality('hd1080');
-        this.player_instance.setPlaybackRate(1.5);
+        this.player_instance.setPlaybackQuality(Config.youtube.quality);
+        this.player_instance.setPlaybackRate(Config.youtube.speed);
     };
 
     render() {

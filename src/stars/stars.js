@@ -7,8 +7,8 @@ class Stars extends Component {
     render() {
         return (
             <div className="stars">
-                <div className="stars"></div>
-                <div className="twinkling"></div>
+                {/*<div className="stars"></div>*/}
+                {/*<div className="twinkling"></div>*/}
             </div>
         );
     }

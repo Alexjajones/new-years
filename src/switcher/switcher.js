@@ -1,10 +1,9 @@
 import Inferno from 'inferno';
 import Component from 'inferno-component';
-import './switcher.css'
 
 import Config from '../config'
 
-import YouTube from '../youtube/youtube';
+import Visualisation from '../visualisation/visualisation';
 import Countdown from '../countdown/countdown';
 import HappyNewYear from '../happy-new-year/happy-new-year';
 
@@ -14,13 +13,13 @@ class Switcher extends Component {
         var switch_conf = Config.switcher;
 
         if (timeRemaining <= switch_conf.countDown.start && timeRemaining >= switch_conf.countDown.end) {
-            return <Countdown timeRemaining={this.props.timeRemaining} text={Config.countdown.text}/>
+            return <Countdown timeRemaining={this.props.timeRemaining}/>
         }
         else if (timeRemaining <= switch_conf.final.start && timeRemaining > switch_conf.final.end) {
-            return <HappyNewYear quotes={Config.quotes} refreshRate={Config.quoteRefreshRate}/>
+            return <HappyNewYear/>
         }
         else {
-            return <YouTube video_id={Config.youtube.id}/>
+            return <Visualisation/>
         }
     }
 

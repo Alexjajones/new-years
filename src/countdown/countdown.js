@@ -1,5 +1,6 @@
 import Inferno from 'inferno';
 import Component from 'inferno-component';
+import Config from '../config'
 
 class Countdown extends Component {
 
@@ -8,7 +9,7 @@ class Countdown extends Component {
             <div className="container">
                 <div>
                     <div className="title">{this.props.timeRemaining}</div>
-                    <div className="subtitle">{this.props.text}</div>
+                    <div className="subtitle">{Config.countdown.text}</div>
                 </div>
             </div>
         );
