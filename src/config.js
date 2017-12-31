@@ -28,15 +28,21 @@ var config = {
     },
     quotes: {
         items: [
-            'doesbenhaveagf?',
+            'welcomehomeharrylane',
             'gaypride',
-            'votetrump',
             'newyearnewme',
             'garageparty',
             'alexscottisalegend',
-            'RIPtheexerciseapp',
             'legacy',
-            'some-racist-shit-wez-said'
+            'some-racist-shit-wez-said',
+            'whencanwegobacktoglasto',
+            'willbensmumgoonadatewithme',
+            'dontcryjack',
+            'tomscottsjewnose',
+            'subscribetoAKB',
+            'KareemKasbarismyhero',
+            'gobacktocanada',
+            'gettinglaidatopacarpark'
         ],
         refreshRate: 7
     },
