@@ -34,7 +34,11 @@ class ShoutOuts extends Component {
 
             var shout = this.state.shoutouts[0];
 
-            this.setState({shoutout: <div className="shout-outs">{shout.text}</div>});
+            if (shout.type === 'text') {
+                this.setState({shoutout: <div className="shout-outs">{shout.text}</div>});
+            } else if (shout.type === 'picture') {
+                this.setState({shoutout: <img className="shout-outs-picture" src={shout.text}/>});
+            }
 
             this.updateSeenState(shout);
         }

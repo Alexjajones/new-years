@@ -2,7 +2,7 @@ import moment from 'moment'
 
 var nextYear = parseInt(moment().format('YYYY')) + 1;
 
-var youtubeCode = '5fZT4dnkXM8';
+var youtubeCode = 'NVb5GV6lntU';
 
 var config = {
     countdown: {
@@ -23,7 +23,7 @@ var config = {
             iv_load_policy: 3,
             autoplay: 1,
             start: 1,
-            end: 19980
+            end: 3240
         }
     },
     quotes: {
@@ -34,14 +34,15 @@ var config = {
             'newyearnewme',
             'garageparty',
             'alexscottisalegend',
-            'secretdildo',
             'RIPtheexerciseapp',
-            'brexitwaspoppysidea'
+            'legacy',
+            'suicide-is-a-preferable-alternative-to-this-party',
+            'some-racist-shit-wez-said'
         ],
         refreshRate: 7
     },
     shoutOut: {
-        namespace: 'shoutouts-demo',
+        namespace: 'garage-2017',
         refreshRate: 30
     },
     switcher: {
