@@ -36,7 +36,6 @@ var config = {
             'alexscottisalegend',
             'RIPtheexerciseapp',
             'legacy',
-            'suicide-is-a-preferable-alternative-to-this-party',
             'some-racist-shit-wez-said'
         ],
         refreshRate: 7
