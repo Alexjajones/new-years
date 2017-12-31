@@ -23,7 +23,7 @@ class ShoutOutInputText extends Component {
                        onKeyUp={this._handleKeyPress}
                        placeholder="Shout out here"/>
 
-                <button onClick={this.sendValue}>Send it</button>
+                <button className="send-text" onClick={this.sendValue}>Send it</button>
             </div>
         );
     }

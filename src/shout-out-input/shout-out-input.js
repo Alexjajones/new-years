@@ -13,9 +13,9 @@ class ShoutOutInput extends Component {
     state = {showing: 'default'};
 
     componentWillMount() {
-        const workstation = !!this.getUrlVar().workstation;
+        this.workstation = !!this.getUrlVar().workstation;
 
-        this.setState({workstation, showing: workstation ? null : 'text'})
+        this.setState({workstation: this.workstation, showing: this.workstation ? null : 'text'})
     }
 
     getUrlVar() {
@@ -32,7 +32,7 @@ class ShoutOutInput extends Component {
             Firebase.database.ref(Config.shoutOut.namespace)
                 .push({text, type});
 
-            this.setState({showing: ''})
+            this.setState({showing: this.workstation ? null : 'text'})
         }
     };
 
